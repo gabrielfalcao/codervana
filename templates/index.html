@@ -10,8 +10,8 @@
     <link href="/media/css/bootstrap.css" rel="stylesheet" />
     <link href="/media/css/bootstrap-responsive.css" rel="stylesheet" />
     <link href="/media/css/codervana.css" rel="stylesheet" />
-
-    <link rel="shortcut icon" href="/media/ico/favicon.png" />
+    <link rel="stylesheet" href="/media/css/nv.d3.css" type="text/css" media="screen" />
+    <link rel="shortcut icon" href="/media/img/favicon.png" />
 
   </head>
 
@@ -20,10 +20,10 @@
       <div class="span2 logo">
         <a href="http://localhost:8000">codervana</a>
       </div>
-      <div class="span3 offset4">
+      <div class="span2 offset6">
         <input type="text" name="search" class="search" placeholder="search in the code" />
       </div>
-      <div class="profile menu span2 offset1">
+      <div class="profile menu pull-right">
         <a class="profile menu-item" href="#">
           <span>gabrielfalcao</span>
           <img class="profile icon" src="/media/img/profile-icon.png" alt="profile menu" />
@@ -34,27 +34,20 @@
 
     <div id="whiteboard" class="container">
       <div class="row">
-        <div class="span12">
+        <div class="span8">
           <h1>Coming soon...</h1>
           <hr />
           <br />
         </div>
+
+          <div id="chart"><svg></svg></div>
+
       </div>
     </div>
 
-    <script src="/media/js/jquery.js"></script>
-    <script src="/media/js/bootstrap-transition.js"></script>
-    <script src="/media/js/bootstrap-alert.js"></script>
-    <script src="/media/js/bootstrap-modal.js"></script>
-    <script src="/media/js/bootstrap-dropdown.js"></script>
-    <script src="/media/js/bootstrap-scrollspy.js"></script>
-    <script src="/media/js/bootstrap-tab.js"></script>
-    <script src="/media/js/bootstrap-tooltip.js"></script>
-    <script src="/media/js/bootstrap-popover.js"></script>
-    <script src="/media/js/bootstrap-button.js"></script>
-    <script src="/media/js/bootstrap-collapse.js"></script>
-    <script src="/media/js/bootstrap-carousel.js"></script>
-    <script src="/media/js/bootstrap-typeahead.js"></script>
-    <script src="/media/js/bootstrap-affix.js"></script>
+    <script src="/media/js/jquery-1.9.1.min.js"></script>
+    <script src="/media/js/d3.min.js"></script>
+    <script src="/media/js/nv.d3.min.js"></script>
+    <script src="/media/js/codervana.widget.karma.js"></script>
   </body>
 </html>

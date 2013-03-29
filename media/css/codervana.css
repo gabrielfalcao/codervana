@@ -28,18 +28,18 @@ a, a:hover {
 
 #whiteboard {
   padding: 22px 15px 22px 15px;
-
-    border: 1px solid rgba(153,153,153,.3); /* stroke */
-    -moz-border-radius: 9px;
-    -webkit-border-radius: 9px;
-    border-radius: 9px; /* border radius */
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box; /* prevents bg color from leaking outside the border */
-    background-color: #f7fcfb; /* layer fill content + color overlay */
-    -moz-box-shadow: 0 7px 6px rgba(162,159,179,.58), inset 0 0 2px rgba(255,255,255,.45); /* drop shadow and inner glow */
-    -webkit-box-shadow: 0 7px 6px rgba(162,159,179,.58), inset 0 0 2px rgba(255,255,255,.45); /* drop shadow and inner glow */
-    box-shadow: 0 7px 6px rgba(162,159,179,.58), inset 0 0 2px rgba(255,255,255,.45); /* drop shadow and inner glow */
+  min-height: 800px;
+  border: 1px solid rgba(153,153,153,.3); /* stroke */
+  moz-border-radius: 9px;
+  webkit-border-radius: 9px;
+  border-radius: 9px; /* border radius */
+  moz-background-clip: padding;
+  webkit-background-clip: padding-box;
+  background-clip: padding-box; /* prevents bg color from leaking outside the border */
+  background-color: #f7fcfb; /* layer fill content + color overlay */
+  moz-box-shadow: 0 7px 6px rgba(162,159,179,.58), inset 0 0 2px rgba(255,255,255,.45); /* drop shadow and inner glow */
+  webkit-box-shadow: 0 7px 6px rgba(162,159,179,.58), inset 0 0 2px rgba(255,255,255,.45); /* drop shadow and inner glow */
+  box-shadow: 0 7px 6px rgba(162,159,179,.58), inset 0 0 2px rgba(255,255,255,.45); /* drop shadow and inner glow */
 }
 
 .topbar {
@@ -52,6 +52,7 @@ a, a:hover {
   color: #1d4f47;
   font-size: 36px;
   float: left;
+  margin-left: 0;
 }
 
 .logo:hover {
