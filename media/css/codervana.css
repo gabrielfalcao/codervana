@@ -1,3 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
 body {
   background: url(/media/img/background-plaid.png);
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 100;
+  color: #1d4f47;
+}
+
+.navbar .navbar-inner {
+  background: transparent;
+}
+
+#whiteboard {
+  padding: 22px 15px 22px 15px;
+  border: 1px solid rgba(153,153,153,.3); /* stroke */
+  moz-border-radius: 9px;
+  webkit-border-radius: 9px;
+  border-radius: 9px; /* border radius */
+  moz-background-clip: padding;
+  webkit-background-clip: padding-box;
+  background-clip: padding-box; /* prevents bg color from leaking outside the border */
+  background-color: #fbf7fc; /* layer fill content + color overlay */
+  moz-box-shadow: 0 7px 6px rgba(162,159,179,.58), inset 0 0 2px rgba(255,255,255,.45); /* drop shadow and inner glow */
+  webkit-box-shadow: 0 7px 6px rgba(162,159,179,.58), inset 0 0 2px rgba(255,255,255,.45); /* drop shadow and inner glow */
+  box-shadow: 0 7px 6px rgba(162,159,179,.58), inset 0 0 2px rgba(255,255,255,.45); /* drop shadow and inner glow */
+}
+
+
+.navbar .logo {
+  display: block;
+  padding: 22px 0 21px 0;
+  font-family: 'Adobe Garamond Pro', 'Adobe Garamond', 'Garamond', 'EB Garamond', serif;
+  color: #1d4f47;
+  font-size: 36px;
+}
+.navbar .logo:hover {
+  opacity: .9;
+  text-decoration:none;
 }

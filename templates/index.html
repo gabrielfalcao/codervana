@@ -16,7 +16,9 @@
   </head>
 
   <body>
-    <div class="navbar">
+
+
+    <div class="navbar navbar-static-top" data-spy="affix" style="top:0;left:0;width:100%;">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -24,24 +26,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">codervana.io</a>
-          {% block nav_bar_content %}
-          {% end %}
+          <a class="logo" href="http://{{ settings.DOMAIN }}">codervana</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <!-- <li><a href="/">Random</a></li> -->
+              <!-- <li><a href="/newest">Newest</a></li> -->
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      {% block content %}
-      <h1>Welcome to codervana</h1>
-      <h3>Please contact me at gabrielfalcao@codervana.io</h3>
-      {% end %}
-      <hr>
-
-      <footer>
-        <p>&copy; codervana.io 2013</p>
-      </footer>
-
+    <div id="whiteboard" class="container">
+      <div class="row">
+        <div class="span12">
+          <h1>Coming soon...</h1>
+          <hr />
+          <br />
+        </div>
+      </div>
     </div>
 
     <script src="/media/js/jquery.js"></script>
