@@ -16,24 +16,20 @@
   </head>
 
   <body>
-
-
-    <div class="navbar navbar-static-top" data-spy="affix" style="top:0;left:0;width:100%;">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="logo" href="http://{{ settings.DOMAIN }}">codervana</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <!-- <li><a href="/">Random</a></li> -->
-              <!-- <li><a href="/newest">Newest</a></li> -->
-          </div>
-        </div>
+    <div class="container topbar">
+      <div class="span2 logo">
+        <a href="http://localhost:8000">codervana</a>
       </div>
+      <div class="span3 offset4">
+        <input type="text" name="search" class="search" placeholder="search in the code" />
+      </div>
+      <div class="profile menu span2 offset1">
+        <a class="profile menu-item" href="#">
+          <span>gabrielfalcao</span>
+          <img class="profile icon" src="/media/img/profile-icon.png" alt="profile menu" />
+        </a>
+      </div>
+
     </div>
 
     <div id="whiteboard" class="container">
