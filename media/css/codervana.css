@@ -128,3 +128,39 @@ and (max-width : 320px) {
     display: none;
   }
 }
+
+ul.feed {
+  list-style: none;
+}
+ul.feed li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #66cc68;
+}
+ul.feed li span {
+  display: block;
+  padding: 14px 0 0 20px;
+  float: left;
+}
+.chakra {
+    width: 40px;
+    height: 42px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+  color: white;
+  font-family: 'Adobe Garamond Pro', 'Adobe Garamond', 'Garamond', 'EB Garamond', serif;
+  font-size: 30px;
+  padding: 8px 0 0 10px;
+  float: left;
+}
+.violet-sahasrara {
+  background-color: #c54fb1;
+}
+
+.green-anahata {
+  background-color: #65cb67;
+}
