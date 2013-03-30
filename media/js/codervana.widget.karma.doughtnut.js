@@ -7,7 +7,7 @@ $(function(){
 	segmentStrokeColor : "#fff",
 
 	//Number - The width of each segment stroke
-	segmentStrokeWidth : 4,
+	segmentStrokeWidth : 2,
 
 	//The percentage of the chart that we cut out of the middle.
 	percentageInnerCutout : 50,
@@ -25,7 +25,7 @@ $(function(){
 	animateRotate : true,
 
 	//Boolean - Whether we animate scaling the Doughnut from the centre
-	animateScale : true,
+	animateScale : false,
 
 	//Function - Will fire on animation completion.
 	onAnimationComplete : null

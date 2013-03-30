@@ -106,7 +106,7 @@ input.search {
   background: url(/media/img/magnifier.png) no-repeat 97% 65%;
   font-size: 16px;
   height: 30px;
-  opacity: 1;
+  opacity: 1x;
   padding: 0 30px 0 15px;
   border: 1px solid #d5d5d5; /* stroke */
   moz-border-radius: 16px;
