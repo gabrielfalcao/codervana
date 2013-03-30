@@ -16,32 +16,35 @@
   </head>
 
   <body>
-    <div class="container topbar row-fluid">
-      <div class="span2 logo">
-        <a href="http://localhost:8000">codervana</a>
-      </div>
-      <div class="span2 offset6">
-        <input type="text" name="search" class="search" placeholder="search in the code" />
-      </div>
-      <div class="profile menu pull-right">
-        <a class="profile menu-item" href="#">
+    <div class="container">
+      <div class="profile menu span2 pull-right">
+        <a class="profile menu-item pull-right" href="#">
           <span>gabrielfalcao</span>
           <img class="profile icon" src="/media/img/profile-icon.png" alt="profile menu" />
         </a>
       </div>
 
+      <div class="span2 logo">
+        <a href="http://{{ settings.DOMAIN }}">codervana</a>
+
+      </div>
+      <div class="span3 offset5">
+        <input type="text" name="search" class="search" placeholder="search in the code" />
+      </div>
+
+
     </div>
 
-    <div id="whiteboard" class="container">
-      <div class="row">
-        <div class="span8">
-          <h1>Coming soon...</h1>
-          <hr />
-          <br />
-        </div>
-
+    <div class="container">
+      <div id="whiteboard">
+        <div class="row">
+          <div class="span8">
+            <h1>Coming soon...</h1>
+            <hr />
+            <br />
+          </div>
           <div id="chart"><svg></svg></div>
-
+        </div>
       </div>
     </div>
 

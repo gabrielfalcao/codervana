@@ -102,9 +102,12 @@ input {
 }
 
 input.search {
+  width: 176px;
+  background: url(/media/img/magnifier.png) no-repeat 97% 65%;
   font-size: 16px;
   height: 30px;
-  padding: 0 0 0 15px;
+  opacity: 1;
+  padding: 0 30px 0 15px;
   border: 1px solid #d5d5d5; /* stroke */
   moz-border-radius: 16px;
   webkit-border-radius: 16px;
