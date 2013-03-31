@@ -1,0 +1,45 @@
+.feed-container {
+  height: 800px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+.border-left {
+  border-left: 2px solid #DDD;
+}
+
+.right-box {
+  height: 400px;
+  margin: 0;
+  pading: 0;
+}
+
+.feed-row {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  height: 70px;
+}
+
+div.icons {
+  float: left;
+  margin: 10px;
+}
+
+.feed-row p {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  padding: 15px 0 0 0;
+  font-size: 16px;
+  float: left;
+}
+
+.feed-row p span.sub {
+  display: block;
+  color: #AAA;
+  font-weight: 400;
+
+}
+
+.feed-row strong {
+  color: #57a79a;
+}

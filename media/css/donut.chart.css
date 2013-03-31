@@ -1,0 +1,36 @@
+.donut-graph {
+  margin: 0 auto;
+  overflow: visible;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 0 0 10px;
+}
+
+.donut-graph .svg-container {
+  clear: both;
+  margin: 0 0;
+  margin-top: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 270px;
+
+}
+.chartLabel {
+  fill: #666;
+}
+.arcLabel {
+  fill: #fff;
+}
+
+.donut-graph .labels a {
+  display: block;
+  float: left;
+  padding: 5px 4px;
+  font-size: 20px;
+}
+
+.donut-graph .labels a:hover {
+  background: #feff9b;
+  border: 1px dashed e4e58c;
+}

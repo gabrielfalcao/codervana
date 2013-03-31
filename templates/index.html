@@ -10,7 +10,6 @@
     <link href="/media/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/media/css/bootstrap-responsive.min.css" rel="stylesheet" />
     <link href="/media/css/codervana.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/media/css/nv.d3.css" type="text/css" media="screen" />
     <link rel="shortcut icon" href="/media/img/favicon.png" />
 
   </head>
@@ -37,31 +36,49 @@
 
     <div class="container">
       <div id="whiteboard">
-        <div class="row">
-          <div class="span6">
-            <h1>Feed</h1>
-            <hr />
-            <br />
-            <ul class="feed">
-              <li>
-                <p class="chakra green-anahata">
-                  <img src="/media/img/thumbs-up-icon.png" />
-                </p>
-                <span>app.models.Merchant has improved</span>
+        <div class="row-fluid">
+          <div class="span12 project-bar">
+            <div class="project-name">
+              <h1>Yipit-merchants</h1>
+            </div>
+            <ul class="project-tabs">
+              <li class="tab well">
+                <a href="#Feed">Feed</a>
+              </li>
+              <li class="tab well">
+                <a href="#Classes and functions">Classes and Functions</a>
+              </li>
+              <li class="tab well">
+                <a href="#Classes and functions">Scoreboard</a>
+              </li>
+              <li class="tab well">
+                <a href="#Classes and functions">CI Screen</a>
               </li>
             </ul>
           </div>
-          <div class="span4 pull-right">
-            <h2>Hotspots</h2>
-            <hr />
-            <canvas id="myChart" width="340" height="400"></canvas>
-          </div>
         </div>
+        <hr />
+        <div class="row-fluid">
+          <div class="span8 feed-container">
+            {% for x in range(20) %}
+              {% include "feed/simple-item.html" %}
+            {% end %}
+          </div>
+          <div class="span4 border-left right-box">
+            <div class="donut-graph">
+              <div class="labels">
+                <a href="#overall" data-label="Overall" data-values="[30, 10, 6, 30, 14, 10]">Overwall</a>
+                <a href="#modules" data-label="Modules" data-values="[24, 7, 2, 18, 13, 36]">Modules</a>
+                <a href="#classes" data-label="Classes" data-values="[12, 4, 2, 10, 11, 61]">Classes</a>
+                <a href="#callables" data-label="Functions" data-values="[12, 4, 2, 10, 21, 51]">Functions</a>
+              </div>
+              <div class="svg-container"></div>
+            </div>
+          </div>
       </div>
-    </div>
-    <script src="/media/js/underscore-min.js"></script>
-    <script src="/media/js/jquery-1.9.1.min.js"></script>
-    <script src="/media/js/Chart.min.js"></script>
-    <script src="/media/js/codervana.widget.karma.js"></script>
+
+      <script src="/media/js/jquery-1.9.1.min.js"></script>
+      <script src="/media/js/d3.min.js"></script>
+      <script src="/media/js/donut-chart.js"></script>
   </body>
 </html>
