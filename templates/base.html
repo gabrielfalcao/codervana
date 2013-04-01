@@ -15,6 +15,7 @@
   </head>
 
   <body>
+    {% block body %}
     <div class="container">
       <div class="profile menu span2 pull-right">
         <a class="profile menu-item pull-right" href="#">
@@ -39,46 +40,34 @@
         <div class="row-fluid">
           <div class="span12 project-bar">
             <div class="project-name">
-              <h1>Yipit-merchants</h1>
+              <h1>{{ project.name }}</h1>
             </div>
             <ul class="project-tabs">
               <li class="tab well">
-                <a href="#Feed">Feed</a>
+                <a href="{{ project.url('feed') }}">Feed</a>
               </li>
               <li class="tab well">
-                <a href="#Classes and functions">Classes and Functions</a>
+                <a href="{{ project.url('code') }}">Classes and Functions</a>
               </li>
               <li class="tab well">
-                <a href="#Classes and functions">Scoreboard</a>
+                <a href="{{ project.url('scoreboard') }}">Scoreboard</a>
               </li>
               <li class="tab well">
-                <a href="#Classes and functions">CI Screen</a>
+                <a href="{{ project.url('ci') }}">CI Screen</a>
               </li>
             </ul>
           </div>
         </div>
         <hr />
-        <div class="row-fluid">
-          <div class="span8 feed-container">
-            {% for x in range(20) %}
-              {% include "feed/simple-item.html" %}
-            {% end %}
-          </div>
-          <div class="span4 border-left right-box">
-            <div class="donut-graph">
-              <div class="labels">
-                <a href="#overall" data-label="Overall" data-values="[30, 10, 6, 30, 14, 10]">Overwall</a>
-                <a href="#modules" data-label="Modules" data-values="[24, 7, 2, 18, 13, 36]">Modules</a>
-                <a href="#classes" data-label="Classes" data-values="[12, 4, 2, 10, 11, 61]">Classes</a>
-                <a href="#callables" data-label="Functions" data-values="[12, 4, 2, 10, 21, 51]">Functions</a>
-              </div>
-              <div class="svg-container"></div>
-            </div>
-          </div>
+        <div class="row-fluid whiteboard-container">
+          {% block whiteboard_container %}
+          {% end %}
+        </div><!-- .row-fluid -->
+        <script src="/media/js/jquery-1.9.1.min.js"></script>
+        <script src="/media/js/d3.min.js"></script>
+        <script src="/media/js/donut-chart.js"></script>
       </div>
-
-      <script src="/media/js/jquery-1.9.1.min.js"></script>
-      <script src="/media/js/d3.min.js"></script>
-      <script src="/media/js/donut-chart.js"></script>
+    </div>
+    {% end %}
   </body>
 </html>

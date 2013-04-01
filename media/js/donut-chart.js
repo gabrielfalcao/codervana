@@ -88,7 +88,8 @@ $(function(){
     }
 
     // click handler
-    $(".donut-graph .labels a").click(function() {
+    $(".donut-graph .labels a").click(function(e) {
         updateChart(this.href.slice(this.href.indexOf('#') + 1));
+        return e.preventDefault();
     });
 });

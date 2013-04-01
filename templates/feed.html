@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block whiteboard_container %}
+
+<div class="span8 feed-container">
+{% for x in range(20) %}
+  {% include "feed/simple-item.html" %}
+{% end %}
+</div>
+
+<div class="span4 border-left right-box">
+  <div class="donut-graph">
+    <div class="labels">
+      <a href="#overall" data-label="Overall" data-values="[30, 10, 6, 30, 14, 10]">Overwall</a>
+      <a href="#modules" data-label="Modules" data-values="[24, 7, 2, 18, 13, 36]">Modules</a>
+      <a href="#classes" data-label="Classes" data-values="[12, 4, 2, 10, 11, 61]">Classes</a>
+      <a href="#callables" data-label="Functions" data-values="[12, 4, 2, 10, 21, 51]">Functions</a>
+    </div>
+    <div class="svg-container"></div>
+  </div><!-- .donut-graph -->
+</div><!-- .span4.border-left.right-box -->
+{% end %}

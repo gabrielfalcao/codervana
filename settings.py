@@ -37,7 +37,6 @@ if not PRODUCTION:
     }
 
 
-
 TEMPLATE_PATH = "./templates"
 STATIC_PATH = "./media"
 
@@ -46,7 +45,9 @@ INSTALLED_APPS = (
     "django.contrib.contenttypes",
     "django.contrib.sessions",
 )
-DOMAIN = "codervana.io"
+DOMAIN = "app.codervana.io"
+if not PRODUCTION:
+    DOMAIN = "localhost:8000"
 
 AUTHENTICATED_HOME = "/"
 ANONYMOUS_HOME = "/"
