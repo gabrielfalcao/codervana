@@ -7,10 +7,10 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <link href="/media/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/media/css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <link href="/media/css/codervana.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="/media/img/favicon.png" />
+    <link href="/media/css/bootstrap.min.css?v={{ settings.RELEASE }}" rel="stylesheet" />
+    <link href="/media/css/bootstrap-responsive.min.css?v={{ settings.RELEASE }}" rel="stylesheet" />
+    <link href="/media/css/codervana.css?v={{ settings.RELEASE }}" rel="stylesheet" />
+    <link rel="shortcut icon" href="/media/img/favicon.png?v={{ settings.RELEASE }}" />
 
   </head>
 
@@ -20,7 +20,7 @@
       <div class="profile menu span2 pull-right">
         <a class="profile menu-item pull-right" href="#">
           <span>gabrielfalcao</span>
-          <img class="profile icon" src="/media/img/profile-icon.png" alt="profile menu" />
+          <img class="profile icon" src="/media/img/profile-icon.png?v={{ settings.RELEASE }}" alt="profile menu" />
         </a>
       </div>
 
@@ -63,9 +63,9 @@
           {% block whiteboard_container %}
           {% end %}
         </div><!-- .row-fluid -->
-        <script src="/media/js/jquery-1.9.1.min.js"></script>
-        <script src="/media/js/d3.min.js"></script>
-        <script src="/media/js/donut-chart.js"></script>
+        <script src="/media/js/jquery-1.9.1.min.js?v={{ settings.RELEASE }}"></script>
+        <script src="/media/js/d3.min.js?v={{ settings.RELEASE }}"></script>
+        <script src="/media/js/donut-chart.js?v={{ settings.RELEASE }}"></script>
       </div>
     </div>
     {% end %}

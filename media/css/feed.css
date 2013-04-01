@@ -4,15 +4,17 @@
   margin-bottom: 20px;
 }
 .border-left {
-  border-left: 2px solid #DDD;
+  border-left: 1px solid #DDD;
 }
 
 .right-box {
-  height: 400px;
   margin: 0;
-  pading: 0;
+  margin: 0;
 }
 
+.right-box h2 {
+  margin: 10px 0 10px 12px;
+}
 .feed-row {
   margin: 0;
   padding: 0;
@@ -42,4 +44,73 @@ div.icons {
 
 .feed-row strong {
   color: #57a79a;
+}
+
+
+ul.hotspots {
+  display: block;
+  float: left;
+  margin: 0 0 0 12px;
+}
+
+ul.hotspots .hotspot {
+  clear: both;
+  font-family: Monaco, monospace;
+  font-size: 12px;
+  display: block;
+  float: left;
+  margin: 4px 0;
+}
+
+ul.hotspots .hotspot p {
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  margin-left: 8px;
+  display: block;
+  float: left;
+  color: #fff;
+}
+ul.hotspots .hotspot p a {
+  color: #5089c5;
+}
+ul.hotspots .hotspot p a:hover {
+  background-color: #feff9b;
+}
+
+.chakra {
+  display: block;
+  float: left;
+  width: 23px;
+  height: 28px;
+  moz-border-radius: 25px;
+  webkit-border-radius: 25px;
+  border-radius: 25px;
+  moz-background-clip: padding;
+  webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 20px;
+  font-family: "Lato";
+  font-weight: 400;
+  padding: 7px 0 0 11px;
+  color: #fff;
+}
+
+.chakra.red {
+  background-color: #ff1343;
+}
+.chakra.green {
+  background-color: #66cc68;
+}
+.chakra.violet {
+  background-color: #c550b1;
+}
+.chakra.orange {
+  background-color: #ff782d;
+}
+.chakra.blue {
+  background-color: #5089c5;
+}
+.chakra.purple {
+  background-color: #8d50c5;
 }

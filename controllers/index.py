@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import random
 from shrine.web import get
 from shrine.conf import settings
+from django.db import models
 
 
 class ProjectOwner(object):
@@ -24,6 +26,21 @@ class Project(object):
         return '/'.join(['/', settings.DOMAIN, self.owner.name, self.name] + list(args))
 
 
+make_choices = lambda: list(set(filter(lambda x: len(x) > 3 and len(x) < 10 and x.isalnum() and x[0].upper() == x[0], dir(models))))
+
+
+class Hotspot(object):
+    def __init__(self, data, CHOICES=[]):
+        self.grade, self.css_class = data.items()[0]
+        name = random.choice(CHOICES)
+        CHOICES.remove(name)
+        self.name = 'django.db.models.{0}'.format(name)
+
+    @property
+    def url(self):
+        return '#'
+
+
 @get('^/$')
 def index(controller):
     controller.redirect('/Yipit/yipit-merchants/feed')
@@ -36,8 +53,23 @@ def project(controller, owner, project):
 
 @get(project_route('feed'))
 def feed(controller, owner, project):
-    controller.render('feed.html',
-                      project=Project(project, owner=ProjectOwner(owner)))
+    grades = [
+        {'A': 'violet'},
+        {'B': 'purple'},
+        {'C': 'blue'},
+        {'D': 'green'},
+        {'E': 'orange'},
+        {'F': 'red'},
+    ]
+
+    CHOICES = make_choices()
+
+    context = {
+        'project': Project(project, owner=ProjectOwner(owner)),
+        'hotspots': [Hotspot(random.choice(grades), CHOICES) for x in range(8)],
+
+    }
+    controller.render('feed.html', **context)
 
 
 @get(project_route('code'))

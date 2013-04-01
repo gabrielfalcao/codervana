@@ -65,3 +65,5 @@ if PRODUCTION:
     ENV_NAME = "codervana_production"
 
 MAKE_FULL_URL = lambda x: "http://{0}/{1}".format(DOMAIN, x.lstrip("/"))
+import commands
+RELEASE = os.getenv('RELEASE', commands.getoutput('git rev-parse HEAD').splitlines()[0].strip())

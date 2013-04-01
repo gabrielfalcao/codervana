@@ -4,10 +4,12 @@
 <div class="span8 feed-container">
 {% for x in range(20) %}
   {% include "feed/simple-item.html" %}
+  {% include "feed/item-indented.html" %}
 {% end %}
 </div>
 
 <div class="span4 border-left right-box">
+  <h2>Repository Karma</h2>
   <div class="donut-graph">
     <div class="labels">
       <a href="#overall" data-label="Overall" data-values="[30, 10, 6, 30, 14, 10]">Overwall</a>
@@ -17,5 +19,15 @@
     </div>
     <div class="svg-container"></div>
   </div><!-- .donut-graph -->
+  <h2>Hotspots</h2>
+  <ul class="hotspots">
+    {% for hotspot in hotspots %}
+    <li class="hotspot">
+      <span class="chakra {{ hotspot.css_class }}">{{ hotspot.grade }}</span>
+      <p><a href="{{ hotspot.url }}">{{ hotspot.name }}</a></p>
+    </li>
+   {% end %}
+
+  </ul>
 </div><!-- .span4.border-left.right-box -->
 {% end %}
