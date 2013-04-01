@@ -43,7 +43,7 @@ class Hotspot(object):
 
 @get('^/$')
 def index(controller):
-    controller.redirect('/Yipit/yipit-merchants/feed')
+    controller.redirect('/gabrielfalcao/merchant-platform/feed')
 
 
 @get(project_route())
