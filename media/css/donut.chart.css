@@ -28,6 +28,7 @@
   float: left;
   padding: 5px 4px;
   font-size: 20px;
+  color: #800a22;
 }
 
 .donut-graph .labels a:hover {

@@ -38,6 +38,13 @@ div.icons .indentation {
   height: 35px;
   margin: 0 15px;
 }
+div.icons .arrow-right {
+  float: left;
+  display: block;
+  background: url(/media/img/arrow-right.png) no-repeat 50%;
+  width: 35px;
+  height: 35px;
+}
 
 .feed-row p {
   font-family: 'Cabin', sans-serif;
@@ -47,6 +54,9 @@ div.icons .indentation {
   float: left;
 }
 
+.feed-row p.hotspot a {
+  color:#5089c5;
+}
 .feed-row p span.sub {
   display: block;
   color: #AAA;
@@ -55,7 +65,10 @@ div.icons .indentation {
 }
 
 .feed-row strong {
-  color: #57a79a;
+  color: #336634;
+}
+.feed-row strong.bad {
+  color: #ff1443;
 }
 
 
@@ -83,10 +96,13 @@ ul.hotspots .hotspot p {
   float: left;
   color: #fff;
 }
-ul.hotspots .hotspot p a {
+.hotspot.icons p {
+  padding:0;
+}
+.hotspot p a {
   color: #5089c5;
 }
-ul.hotspots .hotspot p a:hover {
+ .hotspot p a:hover {
   background-color: #feff9b;
 }
 
