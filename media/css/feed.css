@@ -25,6 +25,18 @@
 div.icons {
   float: left;
   margin: 10px;
+  clear: both;
+}
+div.icons.hotspot {
+  margin-top: 0;
+}
+div.icons .indentation {
+  float: left;
+  display: block;
+  background: url(/media/img/elbow.png) no-repeat;
+  width: 35px;
+  height: 35px;
+  margin: 0 15px;
 }
 
 .feed-row p {
