@@ -3,3 +3,5 @@ build
 dist
 *.egg-info
 codervana.sqlite
+gists/repos
+cache.sqlite
