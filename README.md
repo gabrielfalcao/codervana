@@ -1,5 +1,7 @@
 # codervana
 
+![sc.png](sc.png)
+
 ## features
 
 **Python 2.6, 2.7 and 3**
@@ -143,6 +145,3 @@ in karma points:
 * ajna (indigo)
 
 * sahasrara (violet)
-
-
-![sc.png](sc.png)
