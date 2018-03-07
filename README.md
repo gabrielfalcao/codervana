@@ -143,3 +143,6 @@ in karma points:
 * ajna (indigo)
 
 * sahasrara (violet)
+
+
+![sc.png](sc.png)

@@ -3,4 +3,4 @@ shrine==0.0.24
 tornado==2.4.1
 south==0.7.6
 requests==1.1.0
-MySQL-python==1.2.4
+MySQL-python==1.2.5
